@@ -2,7 +2,7 @@
   "name": "a-matrix-theme",
   "displayName": "Matrix",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.93.0"
   },
@@ -14,6 +14,9 @@
     "type": "git",
     "url": "https://github.com/androettop/matrix-vscode-theme"
   },
+  "scripts": {
+    "publish-vsix": "vsce package && vsce publish"
+  },
   "contributes": {
     "themes": [
       {
@@ -22,5 +25,8 @@
         "path": "./themes/Matrix-color-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.1.0"
   }
 }
